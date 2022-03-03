@@ -10,7 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 5571273308660046895}
   - component: {fileID: 2862324714849322157}
-  m_Layer: 0
+  - component: {fileID: 615553627934668356}
+  - component: {fileID: 5478359617951337284}
+  - component: {fileID: 1949545630931852661}
+  - component: {fileID: -5845905971459713063}
+  - component: {fileID: 4949933953547553758}
+  m_Layer: 8
   m_Name: Eyes Spike (Enemy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8567969668863341942}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: -1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -70,8 +75,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1316274533
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 1727362087, guid: 0d40ed1d4d8873301a6aee7605f91818, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,3 +89,78 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &615553627934668356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567969668863341942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7d1985665f0a8978ab2bad3ee0f818, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &5478359617951337284
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567969668863341942}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!58 &1949545630931852661
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567969668863341942}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0038573742, y: 0.0007714927}
+  serializedVersion: 2
+  m_Radius: 0.38697353
+--- !u!114 &-5845905971459713063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567969668863341942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f6ae85cfdfc873d9999eb8a06c0dcf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+--- !u!114 &4949933953547553758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567969668863341942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ac2414295fb598faf23691eeeb3ade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 25
