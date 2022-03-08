@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1309536391}
   m_Layer: 6
   m_Name: BlueHazardLaser
-  m_TagString: Untagged
+  m_TagString: 1hit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ac2414295fb598faf23691eeeb3ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 1
 --- !u!50 &1309536392
 Rigidbody2D:
   serializedVersion: 4

@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: -2590653144815488383}
   - component: {fileID: 2154407198237837143}
   - component: {fileID: 1707657628875555627}
-  m_Layer: 8
+  - component: {fileID: -3813569460974280172}
+  m_Layer: 6
   m_Name: Steel Hammer (Enemy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -150,7 +151,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6ae85cfdfc873d9999eb8a06c0dcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 150
+  hitEffect: {fileID: 3148467973158180557, guid: 0c3920965c93219f6b6c117fcf2d64a7, type: 3}
+  applyCameraShake: 0
 --- !u!114 &1707657628875555627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,4 +166,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ac2414295fb598faf23691eeeb3ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 30
+--- !u!114 &-3813569460974280172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4018585472614485107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4b07e31e7694e5ba07f6636d74cb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 5313641307167648213, guid: 4aabac20b57290da7af70651133d4f67, type: 3}
+  projectileSpeed: 2
+  projectileLifetime: 30
+  xPosDistanceLaser: 0.627
+  yPosDistanceLaser: 0.422
+  firingRate: 1.75
+  variantEnemyLasers: 0.25
+  minFiringRate: 1
+  useAI: 1
+  isFiring: 0

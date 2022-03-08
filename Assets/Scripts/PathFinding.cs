@@ -7,6 +7,7 @@ public class PathFinding : MonoBehaviour
 {
     enemySpawner enemySpawner;
     WaveConfigSO waveConfig;
+    WaveConfigSO repeatWave;
     List<Transform> wavePoints;
     int wayPointIndex = 0;
     
@@ -20,6 +21,7 @@ public class PathFinding : MonoBehaviour
         waveConfig = enemySpawner.GetCurrentWave();
         wavePoints = waveConfig.GetWayPoints();
         transform.position = wavePoints[wayPointIndex].position;
+        repeatWave = enemySpawner.GetRepeatWave();
     }
 
     // Update is called once per frame
@@ -40,6 +42,7 @@ public class PathFinding : MonoBehaviour
                 wayPointIndex++;
             }
         }
+        
         else
         {
             Destroy(gameObject);

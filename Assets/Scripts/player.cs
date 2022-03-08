@@ -7,6 +7,7 @@ public class player : MonoBehaviour
     Vector2 minBounds;
     Vector2 maxBounds;
     Vector2 rawInput;
+    shooter shooter;
     
     [Header("Ship Features")]
     [SerializeField] float flySpeed = 2f;
@@ -17,6 +18,11 @@ public class player : MonoBehaviour
     [SerializeField] float paddingLeft;
     [SerializeField] float paddingRight;  
     
+    
+    void Awake() 
+    {
+        shooter = GetComponent<shooter>();    
+    }
     
     void Start(){InitBounds();}
 
@@ -45,6 +51,14 @@ public class player : MonoBehaviour
         minBounds = main.ViewportToWorldPoint(new Vector2(0f,0f));
         maxBounds = main.ViewportToWorldPoint(new Vector2(1f,1f));
 
+    }
+
+    void OnFire(InputValue value)
+    {
+        if (shooter != null)
+        {
+            shooter.isFiring = value.isPressed;
+        }
     }
 
 }

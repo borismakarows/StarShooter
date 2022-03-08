@@ -15,9 +15,10 @@ GameObject:
   - component: {fileID: 74227623}
   - component: {fileID: -7208720535520680860}
   - component: {fileID: -6563115123419134373}
+  - component: {fileID: 1564368540}
   m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,7 +187,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f6ae85cfdfc873d9999eb8a06c0dcf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 60
+  hitEffect: {fileID: 3148467973158180557, guid: 0c3920965c93219f6b6c117fcf2d64a7, type: 3}
+  applyCameraShake: 1
+--- !u!114 &1564368540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4659946534649070404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4b07e31e7694e5ba07f6636d74cb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 8368618321820911796, guid: 7c66fe976fb464fe8bd06b69e70addde, type: 3}
+  projectileSpeed: 15
+  projectileLifetime: 3
+  xPosDistanceLaser: 0.627
+  yPosDistanceLaser: 0.422
+  firingRate: 0.2
+  variantEnemyLasers: 0.1
+  minFiringRate: 0.1
+  useAI: 0
+  isFiring: 0
 --- !u!1 &6094355088315374621
 GameObject:
   m_ObjectHideFlags: 0

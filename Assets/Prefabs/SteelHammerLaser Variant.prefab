@@ -75,5 +75,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: SteelHammerLaser Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 1187077162307982647, guid: 7cfc20107a4ed1525a1137f6baefeafb, type: 3}
+      propertyPath: m_TagString
+      value: 2hit
+      objectReference: {fileID: 0}
+    - target: {fileID: 8188107661448345879, guid: 7cfc20107a4ed1525a1137f6baefeafb, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cfc20107a4ed1525a1137f6baefeafb, type: 3}

@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - 2hit
+  - 1hit
   layers:
   - Default
   - TransparentFX
@@ -11,9 +13,9 @@ TagManager:
   - Player
   - Water
   - UI
-  - EnemyLaser
-  - PlayerLaser
   - Enemies
+  - 
+  - 
   - 
   - 
   - 
@@ -49,4 +51,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3851528419
+    locked: 0
+  - name: Particle
+    uniqueID: 4237798297
     locked: 0

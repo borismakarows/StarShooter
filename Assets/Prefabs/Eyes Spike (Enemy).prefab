@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 1949545630931852661}
   - component: {fileID: -5845905971459713063}
   - component: {fileID: 4949933953547553758}
-  m_Layer: 8
+  - component: {fileID: -1080456459245606080}
+  m_Layer: 6
   m_Name: Eyes Spike (Enemy)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  hitEffect: {fileID: 3148467973158180557, guid: 0c3920965c93219f6b6c117fcf2d64a7, type: 3}
+  applyCameraShake: 0
 --- !u!114 &4949933953547553758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,4 +166,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ac2414295fb598faf23691eeeb3ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 30
+--- !u!114 &-1080456459245606080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567969668863341942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c4b07e31e7694e5ba07f6636d74cb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 6974445271930720080, guid: 08be25792dc929f4f9b69a8244014f7d, type: 3}
+  projectileSpeed: 5
+  projectileLifetime: 10
+  xPosDistanceLaser: 0.627
+  yPosDistanceLaser: 0.422
+  firingRate: 0.2
+  variantEnemyLasers: 0.1
+  minFiringRate: 0.1
+  useAI: 1
+  isFiring: 0

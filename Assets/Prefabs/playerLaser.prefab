@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5208577277082664676}
   - component: {fileID: 6941174863925799776}
-  - component: {fileID: 4955627445129208645}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: laserGreen11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,22 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!70 &4955627445129208645
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5745407955068676233}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.09, y: 0.54}
-  m_Direction: 0
 --- !u!1 &8368618321820911796
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,9 +95,10 @@ GameObject:
   - component: {fileID: 7464183572833717683}
   - component: {fileID: 8336852762003072512}
   - component: {fileID: 5257789593217058239}
-  m_Layer: 7
+  - component: {fileID: 154620868}
+  m_Layer: 3
   m_Name: playerLaser
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -168,4 +152,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ac2414295fb598faf23691eeeb3ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 25
+--- !u!70 &154620868
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8368618321820911796}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.090929784, y: 0.5337913}
+  m_Direction: 0
